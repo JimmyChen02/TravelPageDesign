@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css"
+        integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"
+        integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Playfair+Display:wght@500&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
+        integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <script src="page1.js"></script>
+    <link rel="stylesheet" href="page1.css" />
+</head>
+
+<body>
+
+    <div class="scrollify-item">
+        <div class="home-image">
+            <div class="bg">
+                <div class="logo wow animate__animated animate__bounceInUp" data-wow-delay="4.8s"
+                    data-wow-duration="1.75s">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150" height="150" viewBox="0 0 16 16"
+                        style=" fill:#fff;">
+                        <path
+                            d="M 2.40625 1.195313 L 1.695313 1.90625 L 2.050781 2.257813 L 2.757813 2.964844 L 3.109375 3.320313 L 3.820313 2.609375 L 3.464844 2.257813 L 2.757813 1.550781 Z M 13.59375 1.195313 L 13.242188 1.550781 L 12.183594 2.609375 L 12.890625 3.320313 L 13.242188 2.964844 L 14.300781 1.90625 Z M 8 2 C 5.796875 2 4 3.796875 4 6 C 4 7.382813 4.605469 8.179688 5.09375 8.859375 C 5.585938 9.535156 6 10.109375 6 11.5 L 6 12.5 C 6 13.148438 6.425781 13.703125 7.007813 13.90625 C 7.003906 13.9375 7 13.96875 7 14 C 7 14.550781 7.449219 15 8 15 C 8.550781 15 9 14.550781 9 14 C 9 13.96875 9 13.9375 8.996094 13.90625 C 9.578125 13.699219 10 13.148438 10 12.5 L 10 11.5 C 10 10.109375 10.414063 9.535156 10.90625 8.859375 C 11.394531 8.179688 12 7.382813 12 6 C 12 3.796875 10.203125 2 8 2 Z M 8 3 C 9.664063 3 11 4.335938 11 6 C 11 7.117188 10.605469 7.570313 10.09375 8.265625 C 9.652344 8.878906 9.214844 9.742188 9.09375 11 L 6.90625 11 C 6.785156 9.742188 6.347656 8.878906 5.90625 8.265625 C 5.394531 7.570313 5 7.117188 5 6 C 5 4.335938 6.335938 3 8 3 Z M 1 6 L 1 7 L 3 7 L 3 6 Z M 13 6 L 13 7 L 15 7 L 15 6 Z M 3.109375 9.679688 L 2.757813 10.035156 L 2.050781 10.742188 L 1.695313 11.09375 L 2.40625 11.800781 L 3.464844 10.742188 L 3.820313 10.390625 Z M 12.890625 9.679688 L 12.183594 10.390625 L 13.59375 11.800781 L 14.300781 11.09375 L 13.242188 10.035156 Z M 7 12 L 9 12 L 9 12.5 C 9 12.78125 8.78125 13 8.5 13 L 7.5 13 C 7.21875 13 7 12.78125 7 12.5 Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="title-text wow animate__animated animate__bounceInLeft" data-wow-delay="5.65s"
+                    data-wow-duration="2.5s" style="visibility: hidden;">Dolorem
+                </div>
+                <div class="title-text2 wow animate__animated animate__bounceInRight" data-wow-delay="5.65s"
+                    data-wow-duration="2.5s">ipsum</div>
+
+                <div style="font-size: 14px; text-transform: none; width: 500px;">
+                    <div class="wow animate__animated animate__flipInX" data-wow-delay="7.25s" data-wow-duration="2s"
+                        style="padding-top: 6%;">Start date: <span id="start_date"></span></div>
+                    <div class="wow animate__animated animate__flipInX" data-wow-delay="7.25s" data-wow-duration="2s">
+                        End
+                        date: <span id="end_date"></span></div>
+                </div>
+            </div>
+
+            <div class="headerwrapper">
+                <span class="clock wow animate__animated animate__lightSpeedInLeft" data-wow-delay="1s"
+                    data-wow-duration="1.5s">
+                    <div id="clock"></div> <span style="margin: 10px;"> | </span> NY
+                </span>
+                <div class="site-name wow animate__animated animate__bounceInDown" data-wow-delay="2s"
+                    data-wow-duration="1.5s">Dolorem
+                    <div class="site-name2" data-wow-duration=".9s">ipsum</div>
+                </div>
+                <div class="menu wow animate__animated animate__slideInRight" data-wow-delay="3s"
+                    data-wow-duration="1.5s">
+                    <div class="menu-icon wow animate__animated animate__slideInRight" data-wow-delay="3s"
+                        data-wow-duration="1.5s">
+                        <div class="close-text wow animate_animated animate__lightSpeedInRight" data-wow-delay="0s"
+                            data-wow-duration="1.5s"> CLOSE
+                            <i class="close-icon fa-solid fa-xmark wow animate__animated animate__slideInRight"
+                                data-wow-delay="0s" data-wow-duration="1s"></i>
+                        </div>
+                        <div class="menu-text wow animate__animated animate__lightSpeedInRight animate__delay-4s"
+                            data-wow-duration="1.5s"> MENU
+                            <svg class="hamburger wow animate__animated animate__lightSpeedInRight" data-wow-delay=0s"
+                                data-wow-duration="1.5s" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22"
+                                height="22" viewBox="0 0 50 50" style=" fill:#fff;">
+                                <path
+                                    d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="botbar-container wow animate__animated animate__backInDown" data-wow-delay="8.25s"
+            data-wow-duration="2s">
+            <div class="container-fluid bar-grid">
+                <div class="row bar-row">
+                    <div class="col col-6 wow animate__animated animate__zoomInLeft" data-wow-delay="8.75s"
+                        data-wow-duration="2.5s" style="border-right: 1px solid #ccc;">
+                        <div class="card wrapper-calendar">
+                            <div class="travel-icon wow animate__animated animate__zoomInLeft" data-wow-delay="9.8s"
+                                data-wow-duration="2.5s">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            <div class="commence wow animate__animated animate__zoomInLeft" data-wow-delay="10.8s"
+                                data-wow-duration="2.5s">
+                                <a> Commence </a>
+                            </div>
+                            <div class="arrow-icon wow animate__animated animate__zoomInLeft" data-wow-delay="11.8s"
+                                data-wow-duration="2.5s">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                            <div class="terminate wow animate__animated animate__zoomInLeft" data-wow-delay="12.8s"
+                                data-wow-duration="2.5s">
+                                <a>Terminate</a>
+                            </div>
+                            <div class="calendar-popup wow animate__animated animate__zoomInLeft" data-wow-delay="13.8s"
+                                data-wow-duration="2.5s">
+                                <i class="fa-solid fa-angle-up"></i>
+                                <input type="text" name="daterange" value="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-4">
+                        <div class="card wrapper-humans">
+                            <div class="human-icon wow animate__animated animate__zoomInRight" data-wow-delay="14.8s"
+                                data-wow-duration="2.5s">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="humans wow animate__animated animate__zoomInRight" data-wow-delay="15.8s"
+                                data-wow-duration="2.5s">
+                                <a>
+                                    Humans
+                                </a>
+                            </div>
+                            <div class="minus-icon wow animate__animated animate__zoomInRight" data-wow-delay="16.8s"
+                                data-wow-duration="2.5s">
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <div class="human-number wow animate__animated animate__zoomInRight" data-wow-delay="17.8s"
+                                data-wow-duration="2.5s">
+                                00
+                            </div>
+                            <div class="plus-icon wow animate__animated animate__zoomInRight" data-wow-delay="18.8s"
+                                data-wow-duration="2.5s">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-2">
+                        <div class="card wrapper-search">
+                            <!-- <input id="textfield" name="textfield" type="text" placeholder="SEARCH" style="margin-right: 15px;" /> -->
+                            <div class="search-icon wow animate__animated animate__zoomInRight" data-wow-delay="19.8s"
+                                data-wow-duration="2.5s">
+                                <div style="border-left: 1px solid #ccc;">
+                                    <i class="fa-solid fa-magnifying-glass">
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrollify-item text-and-images">
+        <div class="container-text-image">
+            <div class="row container-all">
+                <div class="col col-5">
+                    <div class="wrapper-text-left">
+                        <section class="text-left wow animate__animated animate__lightSpeedInRight"
+                            data-wow-duration="1.25s" style="color: #fff;">
+                            The Experience of an Astronaut
+                        </section>
+                    </div>
+                </div>
+                <div class="col col-7">
+                    <div class="wrapper-images-right">
+                        <div class="images-right">
+                            <div class="wrapper-earth">
+                                <img src="https://eoimages.gsfc.nasa.gov/images/imagerecords/149000/149235/soumi_vir_2016_front.jpg"
+                                    class="earth">
+                            </div>
+                            <div class="wrapper-galaxy">
+                                <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701912393.jpg"
+                                    class="galaxy">
+                            </div>
+                            <div class="wrapper-astronaut">
+                                <img src="https://images.beautyanswered.com/astronaut-on-the-moon.jpg"
+                                    class="astronaut">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrollify-item">
+        <div class="container-text-image2">
+            <div class="row container-items">
+                <div class="col col-6 left-col">
+                    <div class="wrapper-images-left">
+                        <div class="nasa-img1">
+                            <img src="https://images-assets.nasa.gov/image/PIA21390/PIA21390~small.jpg" class="planet">
+                        </div>
+                        <div class="nasa-img2">
+                            <img src="https://images-assets.nasa.gov/image/PIA21073/PIA21073~medium.jpg" class="orion">
+                        </div>
+                        <div class="nasa-img3">
+                            <img src="https://images-assets.nasa.gov/image/PIA00342/PIA00342~medium.jpg" class="nova">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 right-col">
+                    <div class="wrapper-text-right" style="margin-top: 20%">
+                        <section class="text-right wow animate__animated animate__lightSpeedInLeft"
+                            style="color: #fff;">
+                            A Mysterious Place 62+ Miles Above Sea Level
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="sliding-menu">
+        <!-- <div class="btn-close"><i class="fa-solid fa-xmark"></i></div> -->
+        <div class="inner">
+            <ul class="menu-list">
+                <li>UNDEFINED</li>
+                <li>UNDEFINED</li>
+                <li>UNDEFINED</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
